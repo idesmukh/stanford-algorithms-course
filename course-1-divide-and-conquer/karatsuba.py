@@ -1,6 +1,6 @@
 """
-Implementation of RecIntMult algorithm 
-given on page 9 of the book Algorithms Illuminated
+Implementation of Karatsuba algorithm 
+given on page 10 of the book Algorithms Illuminated
 by Tim Roughgarden
 
 Author: Ibad Desmukh
@@ -18,9 +18,9 @@ def count_digits(number):
 	# log10 provides the power to raise 10 to in order to get the number, and floor rounds it to lowest integer
 	return math.floor(math.log10(abs(number))) + 1
 
-def rec_int_mult(x, y):
+def karatsuba(x, y):
 	"""
-    Recursively multiply two positive integers using the RecIntMult algorithm
+    Recursively multiply two positive integers using the Karatsuba algorithm
     
     Args:
     x, y: Positive integers to be multiplied
@@ -46,19 +46,27 @@ def rec_int_mult(x, y):
 	c = y // (10**(n_y//2))
 	d = y % (10**(n_y//2))
 
+	# Calculate p := a + b and q := c + d
+	p = a + b
+	q = c + d
+
 	# Implement recursive multiplication
-	ac = rec_int_mult(a, c)
-	ad = rec_int_mult(a, d)
-	bc = rec_int_mult(b, c)
-	bd = rec_int_mult(b, d)
+	ac = karatsuba(a, c)
+	bd = karatsuba(b, d)
+
+	# Recursively compute (a + b).(c + d), instead of (a.d + b.c)
+	pq = karatsuba(p, q)
+
+	# Calculate adbc := pq - ac - bd which is equal to (a.d + b.c)
+	adbc = pq - ac - bd
 
 	# Calculate each term of the formula
 	term_1 = 10**n * ac
-	term_2 = 10**(n // 2) * (ad + bc)
+	term_2 = 10**(n // 2) * (adbc)
 	term_3 = bd
 
 	# Perform basic addition to compute x.y
 	return term_1 + term_2 + term_3
 
 # Test the function
-print(rec_int_mult(24, 36))
+print(karatsuba(24, 36))
