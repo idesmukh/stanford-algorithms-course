@@ -7,19 +7,15 @@ The specialization covers a broad range of algorithms, with an emphasis on probl
 
 ### Courses
 1. **Divide and Conquer, Sorting and Searching, and Randomized Algorithms**  
-   [16 hours]  
    Core algorithms and techniques in divide-and-conquer, sorting, searching, and randomized algorithms.
 
 2. **Graph Search, Shortest Paths, and Data Structures**  
-   [15 hours]  
    Graph algorithms, shortest paths, and essential data structures.
 
 3. **Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming**  
-   [15 hours]  
    Techniques for optimization problems, greedy algorithms, and dynamic programming.
 
 4. **Shortest Paths Revisited, NP-Complete Problems, and What To Do About Them**  
-   [13 hours]  
    Advanced algorithms, NP-completeness, and approaches to intractable problems.
 
 ## Instructor
