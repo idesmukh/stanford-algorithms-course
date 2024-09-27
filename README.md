@@ -27,7 +27,7 @@ Each course includes:
 - Weekly programming assignments in your preferred programming language
 - Final exams to assess overall understanding
 
-Feel free to explore the folders for each course and view my implementations and solutions.
+Feel free to view my implementations and solutions.
 
 ---
 
