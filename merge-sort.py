@@ -17,7 +17,7 @@ def merge_sort(A):
 	# Find the middle index of A
 	mid_index = len(A) //  2
 
-	# Resursive case: sort the first halve and the second halve
+	# Recursive case: sort the first halve and the second halve
 	# Pseudocode: C := recursively sort first half of A
 	C = merge_sort(A[:mid_index])
 	# Pseudocode: D := recursively sort second half of A
