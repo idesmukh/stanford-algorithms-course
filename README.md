@@ -1,6 +1,6 @@
-# Stanford Algorithms Specialization
+# Algorithms Specialization by Stanford University
 
-This repository contains my solutions and projects for the **Stanford Algorithms Specialization** on Coursera, taught by Professor Tim Roughgarden. This four-course series provides a comprehensive introduction to algorithms, focusing on conceptual understanding and practical applications.
+This repository contains my solutions and projects for the **Algorithms Specialization** on Coursera by Stanford University, taught by Professor Tim Roughgarden. This four-course series provides a comprehensive introduction to algorithms, focusing on conceptual understanding and practical applications.
 
 ## Specialization Overview
 The specialization covers a broad range of algorithms, with an emphasis on problem-solving and technical interview preparation. Each course includes weekly quizzes, programming assignments, and a final exam to solidify the key concepts.
